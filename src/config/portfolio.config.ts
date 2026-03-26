@@ -1,20 +1,18 @@
 export const portfolioConfig = {
   // Basic Information
-  name: "Md Taqui Imam",
-  title: "Software Engineer",
-  description: "I am a Passionate Software Developer",
-  location: "Ramgarh cantt, Jharkhand, India",
+  name: "Rahmad Hafidz",
+  title: "Accountant",
+  description: "I am a Passionate Accountant",
+  location: "Malang Tlogomas",
 
   // Contact Information
-  email: "taquiimam@example.com", // Replace with actual email if available
+  email: "rahmadhafidz07@gmail.com",
+  phone: "+62-853-9410-5850",
 
   // Social Media Links
   socialLinks: {
-    facebook: "https://www.facebook.com/shahina.khatun.1044",
-    twitter: "https://twitter.com/md_taqui_imam",
-    linkedin: "https://www.linkedin.com/in/taqui-imam",
-    external: "https://tinyurl.com/MdTaquiImam",
-    github: "https://github.com/taqui-786", // Assuming this is the GitHub link
+    linkedin: "https://www.linkedin.com/in/rahmad-hafidz-pomalingo-710758347",
+    instagram: "https://www.instagram.com/rahmaad.p?igsh=Yzd4dnk5ZnY5c3Qz&utm_source=qr",
   },
 
   // SEO Information
@@ -40,17 +38,17 @@ export const portfolioConfig = {
       "Taqui Imam",
       "Taquiimam",
       "portfolio",
-      "web developer",
+      "accountant",
       "web",
       "web dev",
-      "developer",
-      "PROGRAMMER ",
-      "programmer ",
+      "accountant",
+      "ACCOUNTANT ",
+      "accountant ",
       "MD TAQUI IMAM ",
       "website",
       "@Taquiimam",
       "Taquiimam",
-      "taqui developer",
+      "taqui accountant",
     ],
     authors: [
       {
@@ -62,7 +60,7 @@ export const portfolioConfig = {
 
   // About Information
   about: {
-    bio: "I am a Full Stack Web Developer from Ramgarh cantt, Jharkhand, India. I'm passionate about crafting web projects and contributing to open-source communities. I specialize in modern JavaScript frameworks and responsive CSS design, focusing on creating pixel-perfect, user-friendly interfaces. With strong attention to detail and efficient delivery, I build seamless web experiences that combine functionality with elegant design.",
+    bio: "I have completed my Bachelor’s Degree in Accounting at Universitas Muhammadiyah Malang with a strong interest in sustainability accounting, CSR, ESG, audit, and financial data analysis. During my academic journey, I also completed the Center of Excellence – Sustainability Accounting Class (COE SSAC) program from the Accounting Department, which strengthened my understanding of sustainability accounting and responsible business practices.",
     hobbies: [
       "Coding",
       "Playing Games",
@@ -71,8 +69,8 @@ export const portfolioConfig = {
       "Creating Cool Projects",
     ],
     personalInfo: {
-      language: "English UK",
-      nationality: "India",
+      language: "•Bahasa Indonesia-Native or bilingual proficiency\n  •English-Limited working proficiency",
+      nationality: "Malang",
       gender: "Male",
     },
   },
@@ -80,10 +78,7 @@ export const portfolioConfig = {
   // Skills and Roles
   skills: {
     roles: [
-      "Freelancer",
-      "Blogger",
-      "Gamer",
-      "Creator",
+      "Auditor",
       "Student",
       "Contributer",
     ],
@@ -183,100 +178,133 @@ export const portfolioConfig = {
   // Education Information
   education: [
     {
-      degree: "Bachelor of Computer Application",
-      institution: "Ranchi University Jharkhand",
-      location: "Doranda College Ranchi",
-      period: "July 2023 - 2026",
-      description:
-        "I am currently Studying Bachelor of Computer Application form Doranda College Ranchi a Goverment College of Ranchi. The program has provided me with a well-rounded education, covering both theoretical foundations and practical applications of computer science.",
+      level: "SMP",
+      institution: "MTS Al-Islah",
+      grade: "84.00/100.00",
+      activities: [
+        "Contributed to school art projects, including drama and music performances for the August 17th Independence Day celebration and other celebrations",
+        "Participated in the production of farewell videos for our class and cohort",
+      ],
+      links: [
+        "https://youtu.be/UCAX5JW3DMA?si=aexemxMnGMwWiwXX",
+        "https://youtu.be/BvbPgbpyo58?si=pBXHUhTpsGeTAe_U",
+      ],
+    },
+    {
+      level: "SMA",
+      institution: "SMA IT Fithrah Insani",
+      grade: "90.25/100.00",
+      activities: [
+        "Contributed to school art projects, including drama and music performances for the August 17th Independence Day celebration",
+        "Participated in the production of farewell videos for our class and cohort",
+      ],
+      links: [
+        "https://youtu.be/-zLUnp8rPbY?si=PIwgSxd-0tg2IUfs",
+        "https://youtu.be/Z9foCq1uj8o?si=170oL6N7nSCBf7z1",
+      ],
+    },
+    {
+      level: "S1",
+      institution: "University of Muhammadiyah Malang",
+      grade: "3.74",
+      activities: [],
+      links: [],
     },
   ],
 
   // Projects Information
   projects: [
     {
-      title: "WePost- A modern, minimalistic social platform.",
-      description:
-        "WePost is a modern, minimalistic social platform for sharing posts, like, follow, and engaging in comments etc.",
-      tags: ["Tanstack-Query", "PostgreSQL", "Shadcn Ui", "Nextjs"],
-      link: "https://we-post-dev.vercel.app",
+      type: "Activities",
+      title: "Center of Excellence School Of Sustainability Accounting Class",
+      description: "Participated in a specialized program focused on sustainability accounting and responsible business practices.",
+      details: [],
+      links: [],
+    },
+  ],
+
+  // Professional Experience
+  certifications: [
+    {
+      title: "Certified Integrated Tax Brevet A & B Course and Coretax Intensive Training",
+      issuer: "Indonesian Institute of Accountants (IAI)",
+      date: "Jul 2025",
     },
     {
-      title: "Devzone- A community chat app for devs",
-      description:
-        "DevZone is the ultimate chat platform for developers to connect, collaborate, and code together. Join the conversation and level up your coding journey.",
-      tags: ["Zustand", "Supabase", "Shadcn Ui", "Nextjs"],
-      link: "https://devzone-ti.vercel.app/",
+      title: "Certified Microsoft Application Training",
+      issuer: "Faculty of Economics and Business Laboratory, University of Muhammadiyah Malang",
+      date: "Sep 2023",
     },
     {
-      title: "itZmyLink- One Page many Links",
-      description:
-        "itZmyLink is a simple platform where user can create a personalized page to showcase all your social media profiles in one place. ",
-      tags: ["Nextjs", "Typescript", "Shadcn Ui"],
-      link: "https://github.com/taqui-786/itZmyLink",
+      title: "Certified Leadership and Character Development Training",
+      issuer: "University of Muhammadiyah Malang",
+      date: "Oct 2022",
     },
     {
-      title: "GitEstimate- Github estimate worth generator",
-      description:
-        "GitEstimate is a simple fun tool where user can generate their github estimate worth card just by entering their github username. ",
-      tags: ["Nextjs", "Typescript", "Shadcn Ui"],
-      link: "https://github.com/taqui-786/GitEstimate",
+      title: "Certified Foreign Language for Specific Purposes (FLSP) Program",
+      issuer: "University of Muhammadiyah Malang",
+      date: "May 2024",
+    },
+  ],
+
+  // Research Projects
+  researchProjects: [
+    {
+      title: "Program Pemberian Beasiswa sebagai Tanggung Jawab Sosial di Perum Jasa Tirta I",
+      description: "Explored how CSR (based on ISO 26000) is implemented through scholarship programs to support education and community development.",
+      type: "Book Chapter",
     },
     {
-      title: "Mixcn-ui- Reusable components for Nextjs",
-      description:
-        "This is Nextjs app with a Collection of Nextjs Components - (Currently under Devlelopment) ",
-      tags: ["Nextjs", "Shadcnui", "Npx", "Library"],
-      link: "https://mixcn-ui.vercel.app",
+      title: "Analisis Komprehensif Sustainability Report PT Pertamina Geothermal Energy dan PT Barito Renewables Energy Tbk Berkaitan Dengan SDGs",
+      description: "Analyzed ESG disclosures and alignment with Sustainable Development Goals (SDGs) in sustainability reports of major energy companies.",
+      type: "Book Chapter - Sustainability Reporting",
     },
     {
-      title: "Rupeespot- All deals Product in one place",
-      description:
-        "This is a free tool to check price history charts for millions of products for popular Indian stores such as Amazon and Flipkart. ",
-      tags: ["Nextjs", "Freelancing", "MySQL"],
-      link: "https://rupeespot.com/",
+      title: "Analisis Tata Kelola Berkelanjutan pada Sustainability Report PT Merdeka Copper Gold Tbk Berbasis GRI Standards terhadap ASRRAT 2023–2024",
+      description: "Analyzed governance practices based on GRI Standards and their alignment with ASRRAT evaluation criteria.",
+      type: "Book Chapter - Strategic Shared Value",
     },
+  ],
+
+  // Work Experience
+  workExperience: [
     {
-      title: "Formcraft- Build Type-Safe Forms with Zero Effort",
-      description:
-        "Create production-ready forms with Zod validation, React Hook Form, and TypeScript. Design, customize, and deploy in minutes.",
-      tags: ["Nextjs", "Shadcnui", "Zod", "React Hook Form "],
-      link: "https://formcraft-ti.vercel.app/",
+      company: "PT BANK MUAMALAT INDONESIA TBK",
+      position: "Accounting & Procurement Support",
+      location: "South Jakarta, DKI Jakarta",
+      period: "Sep 2025 - Dec 2026",
+      responsibilities: [
+        "Performed detailed financial and account-level analysis to ensure accuracy, transparency, and regulatory compliance of published financial statements",
+        "Supported cross-functional finance and procurement processes by translating and standardizing financial data into English reporting",
+        "Assisted procurement governance and vendor due diligence processes",
+        "Contributed to business process improvement and digital transformation initiatives by supporting UI/UX design and drafting Business Requirements Documents (BRD)",
+        "Participated in Accounting Seminars and company visits as an implementing committee member",
+      ],
     },
+  ],
+
+  // Volunteer Experience
+  volunteerExperience: [
     {
-      title: "KryptoKapital- Investing in Cryptocurreny",
-      description:
-        "This is a platform for learning about cryptocurrency with many tools and festures. It is very big project. ",
-      tags: ["Nextjs", "Freelancing", "Supabase"],
-      link: "https://pro.kryptokapital.info/",
-    },
-    {
-      title: "FriendZ - A social media Platform",
-      description:
-        "FriendZ is a social media app made with modern tech stacks such as redis, Authjs etc. A user can Create, delete, like, comment Post. ",
-      tags: ["Redis", "Authjs", "Typescript", "Nextjs"],
-      link: "https://github.com/taqui-786/project-friendz",
-    },
-    {
-      title: "ChatApp- Simple instagram clone",
-      description:
-        "ChatApp is similar to instagram, you can create, edit, delete, like,comment, post and  Follow, unfollow users",
-      tags: ["Reactjs", "Javascript"],
-      link: "https://github.com/taqui-786/chatapp-api",
-    },
-    {
-      title: "Devletter - A Newsletter for devs",
-      description:
-        "Devletter ia a newsletter subscribing single page app made with Nextjs and Tailwindcss.",
-      tags: ["Nextjs", "Tailwindcss"],
-      link: "https://github.com/taqui-786/Devletter",
-    },
-    {
-      title: "CrouMaker - A Crousal Maker App",
-      description:
-        "Crousal Maker is a tool with in-built crousals templates edit and download it in any format.",
-      tags: ["Nextjs", "jsPDF", "html2canvas", "Shadcn Ui"],
-      link: "https://github.com/taqui-786/crousal-maker",
+      organization: "PMM - UNIVERSITY OF MUHAMMADIYAH MALANG",
+      location: "Kebonagung, East Java",
+      unit: "Sub - Unit Publication, Documentation, and Design",
+      period: "Aug 2024 - Sep 2024",
+      activities: [
+        "Contributed to community-based financial literacy initiatives at SDN 05 Kebonagung",
+        "Supported community empowerment programs for local MSMEs with disabilities",
+        "Assisted in promoting recycled bag MSME products through digital platforms",
+        "Managed program communication, documentation, and reporting",
+      ],
+      links: {
+        video: "https://youtu.be/70RLcOGIwCw?si=Z77M3CQjRzETQ-KE",
+        instagram: "https://www.instagram.com/pmm.46kebonagung/",
+        articles: [
+          "https://pmmkebonagung0946.blogspot.com/2024/08/mengembangkan-umkm-disabilitas-melalui.html",
+          "https://pmmkebonagung0946.blogspot.com/2024/08/pelatihan-seminar-untuk-strategi.html",
+          "https://www.kompasiana.com/search_artikel?q=Mempromosikan+Usaha+Kecil+dan+Menengah+Penyandang+Disabilitas+melalui+Pemahaman+Keuangan+dan+Teknologi+Modern",
+        ],
+      },
     },
   ],
 
@@ -285,19 +313,19 @@ export const portfolioConfig = {
     {
       title: "Dev.to",
       description:
-        "I write blogs on web development, trending tech stacks or javascript guide or tips in Dev.to ",
+        "I write blogs on accounting, finance, and related topics in Dev.to ",
       link: "https://dev.to/random_ti",
     },
     {
       title: "Hashnode",
       description:
-        "I write blogs on web development, trending tech stacks or javascript guide or tips in Hashnode",
+        "I write blogs on accounting, finance, and related topics in Hashnode",
       link: "https://mdtaquiimam.hashnode.dev/",
     },
     {
       title: "Medium",
       description:
-        "I write blogs on web development, trending tech stacks or javascript guide or tips in Medium",
+        "I write blogs on accounting, finance, and related topics in Medium",
       link: "https://medium.com/@mdtaqui.jhar",
     },
     {

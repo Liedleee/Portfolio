@@ -1,10 +1,9 @@
 import { cn } from "@/lib/utils";
 import {
-  Facebook,
   Linkedin,
-  Twitter,
-  ExternalLink,
-  Github,
+  Instagram,
+  Mail,
+  Phone,
 } from "lucide-react";
 import { buttonVariants } from "./ui/button";
 import Link from "next/link";
@@ -14,29 +13,24 @@ import { portfolioConfig } from "@/config/portfolio.config";
 const SocialLinks = () => {
   const links = [
     {
-      name: "Facebook",
-      link: portfolioConfig.socialLinks.facebook,
-      icon: <Facebook />,
-    },
-    {
-      name: "Twitter",
-      link: portfolioConfig.socialLinks.twitter,
-      icon: <Twitter />,
-    },
-    {
-      name: "Linkedin",
+      name: "LinkedIn",
       link: portfolioConfig.socialLinks.linkedin,
       icon: <Linkedin />,
     },
     {
-      name: "External",
-      link: portfolioConfig.socialLinks.external,
-      icon: <ExternalLink />,
+      name: "Instagram",
+      link: portfolioConfig.socialLinks.instagram,
+      icon: <Instagram />,
     },
     {
-      name: "Github",
-      link: portfolioConfig.socialLinks.github,
-      icon: <Github />,
+      name: "Email",
+      link: `mailto:${portfolioConfig.email}`,
+      icon: <Mail />,
+    },
+    {
+      name: "Phone",
+      link: `tel:${portfolioConfig.phone}`,
+      icon: <Phone />,
     },
   ];
   return (

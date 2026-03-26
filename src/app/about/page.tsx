@@ -1,55 +1,104 @@
-import Aboutfooter from "@/components/Aboutfooter";
+
 import FramerWrapper from "@/components/animation/FramerWrapper";
 import Heading from "@/components/Heading";
 import { Badge } from "@/components/ui/badge";
-import { Circle, Heart, User2 } from "lucide-react";
+import { Heart, User2, MapPin, Sparkles } from "lucide-react";
 import { portfolioConfig } from "@/config/portfolio.config";
 
-const page = () => {
-  const items = portfolioConfig.about.hobbies.map((hobby) => ({ hobby }));
+// Hobby icon mapping — sesuaikan dengan hobi yang ada di config
+const hobbyIcons: Record<string, string> = {
+  "Reading": "📚",
+  "Music": "🎵",
+  "Traveling": "✈️",
+  "Cooking": "🍳",
+  "Gaming": "🎮",
+  "Photography": "📷",
+  "Cycling": "🚴",
+  "Swimming": "🏊",
+  "Badminton": "🏸",
+  "Football": "⚽",
+  "Drawing": "🎨",
+  "Writing": "✍️",
+  "Hiking": "🥾",
+  "Movies": "🎬",
+  "Fitness": "💪",
+};
 
+const getHobbyIcon = (hobby: string) => {
+  const key = Object.keys(hobbyIcons).find((k) =>
+    hobby.toLowerCase().includes(k.toLowerCase())
+  );
+  return key ? hobbyIcons[key] : "⭐";
+};
+
+const page = () => {
   return (
-    // ABOUT PAGE
-    <div className="h-full w-full relative flex flex-col items-start gap-5 overflow-hidden">
-      <Badge variant="secondary" className="gap-1.5 py-1 ">
+    <div className="h-full w-full relative flex flex-col items-start gap-6 overflow-hidden">
+      
+      {/* Badge */}
+      <Badge variant="secondary" className="gap-1.5 py-1">
         <User2 className="h-4 w-4" />
         About me
       </Badge>
-      <div className="flex flex-col gap-5">
+
+      {/* Heading + Bio */}
+      <div className="flex flex-col gap-4 w-full">
         <Heading>
-          {portfolioConfig.title} And Web <br /> Developer, Based In{" "}
-          {portfolioConfig.about.personalInfo.nationality}.
+          {portfolioConfig.title}, Based In{" "}
+          <span className="inline-flex items-center gap-1.5">
+            <MapPin className="h-6 w-6 text-rose-500 inline" />
+            {portfolioConfig.about.personalInfo.nationality}.
+          </span>
         </Heading>
 
         <FramerWrapper y={0} x={100}>
-          <p className=" font-poppins text-xl w-full text-primary max-sm:text-lg ">
-            {portfolioConfig.about.bio}
-          </p>
+          <div className="relative">
+            {/* Quote accent */}
+            <span className="absolute -left-2 -top-3 text-5xl text-primary/10 font-serif select-none">"</span>
+            <p className="font-poppins text-base w-full text-primary/80 max-sm:text-sm leading-relaxed pl-4 border-l-2 border-primary/20">
+              {portfolioConfig.about.bio}
+            </p>
+          </div>
         </FramerWrapper>
       </div>
+
+      {/* Personal Info Footer */}
       <FramerWrapper
-        className="w-full flex flex-row justify-between max-lg:flex-col "
+        className="w-full"
         y={100}
         delay={0.3}
       >
-        <Aboutfooter />
+        <div className="w-full rounded-xl border border-border bg-secondary/30 p-4">
+          <Aboutfooter />
+        </div>
       </FramerWrapper>
-      <FramerWrapper className="block" y={100} delay={0.31}>
-        <h1 className="gap-2 text-3xl font-poppins text-primary font-semibold flex icon_underline relative max-sm:text-2xl">
-          {" "}
-          <Heart className="h-8 w-8" /> Hobbies
-        </h1>
-        <div className="w-full h-fit p-2 flex flex-row justify-between gap-7 max-lg:flex-col">
-          {items.map((val, indx) => {
-            return (
-              <div
-                key={indx}
-                className="flex gap-2 justify-center items-center flex-row text-xl text-primary pt-3 max-lg:justify-start "
-              >
-                <Circle className="h-3 w-3" /> {val.hobby}
-              </div>
-            );
-          })}
+
+      {/* Hobbies */}
+      <FramerWrapper className="block w-full" y={100} delay={0.31}>
+        <div className="flex items-center gap-2 mb-4">
+          <div className="p-1.5 rounded-md bg-rose-100">
+            <Heart className="h-4 w-4 text-rose-500" />
+          </div>
+          <h2 className="text-lg font-semibold font-poppins text-primary">
+            Hobbies & Interests
+          </h2>
+          <Sparkles className="h-4 w-4 text-yellow-400 ml-1" />
+        </div>
+
+        <div className="grid grid-cols-3 gap-2.5 max-sm:grid-cols-2">
+          {portfolioConfig.about.hobbies.map((hobby, indx) => (
+            <div
+              key={indx}
+              className="flex items-center gap-2.5 p-3 rounded-xl border border-border bg-secondary/20 hover:bg-secondary/50 transition-colors group"
+            >
+              <span className="text-xl group-hover:scale-110 transition-transform">
+                {getHobbyIcon(hobby)}
+              </span>
+              <span className="font-poppins text-sm text-primary font-medium truncate">
+                {hobby}
+              </span>
+            </div>
+          ))}
         </div>
       </FramerWrapper>
     </div>

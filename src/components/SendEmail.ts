@@ -1,6 +1,7 @@
-import { Resend } from "resend";
-import {redirect} from  'next/navigation'
+"use server";
 
+import { Resend } from "resend";
+import { redirect } from 'next/navigation'
 
 // EMAIL SENDGING FUCTIONALITY 
 // ADD RESEND_API_KEY IN YOUR .ENV FILE 

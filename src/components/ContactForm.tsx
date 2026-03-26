@@ -1,3 +1,5 @@
+"use client";
+
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 
@@ -15,12 +17,7 @@ import { SendEmail } from "./SendEmail";
 const ContactForm = () => {
   return (
     <Card>
-      <form
-        action={async (FormData) => {
-          "use server";
-          await SendEmail(FormData);
-        }}
-      >
+      <form action={SendEmail}>
         <CardHeader>
           <CardTitle className="icon_underline">Send me a mail.</CardTitle>
           <CardDescription>
