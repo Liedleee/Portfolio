@@ -53,7 +53,7 @@ export default function AboutSection() {
 
         <FramerWrapper y={0} x={100}>
           <div className="relative pl-4 border-l-2 border-primary/20">
-            <span className="absolute -left-2 -top-4 text-5xl text-primary/10 font-serif select-none leading-none">"</span>
+            <span className="absolute -left-2 -top-4 text-5xl text-primary/10 font-serif select-none leading-none">&quot;</span>
             <p className="font-poppins text-base text-primary/80 leading-relaxed max-sm:text-sm">
               {portfolioConfig.about.bio}
             </p>

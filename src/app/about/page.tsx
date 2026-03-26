@@ -55,7 +55,7 @@ const page = () => {
         <FramerWrapper y={0} x={100}>
           <div className="relative">
             {/* Quote accent */}
-            <span className="absolute -left-2 -top-3 text-5xl text-primary/10 font-serif select-none">"</span>
+            <span className="absolute -left-2 -top-3 text-5xl text-primary/10 font-serif select-none">&quot;</span>
             <p className="font-poppins text-base w-full text-primary/80 max-sm:text-sm leading-relaxed pl-4 border-l-2 border-primary/20">
               {portfolioConfig.about.bio}
             </p>
