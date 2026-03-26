@@ -1,33 +1,33 @@
-"use client";
-
-import Heading from "@/components/Heading";
 import FramerWrapper from "@/components/animation/FramerWrapper";
+import Heading from "@/components/Heading";
 import { Badge } from "@/components/ui/badge";
-import { portfolioConfig } from "@/config/portfolio.config";
 import { Award, BookOpen, Briefcase, Heart, ExternalLink } from "lucide-react";
+import { portfolioConfig } from "@/config/portfolio.config";
 
-export default function ExperienceSection() {
+const projectsPage = () => {
   return (
-    <section id="projects" className="min-h-screen flex flex-col items-start gap-5 overflow-hidden py-20 px-40 max-md:p-4">
-      <Badge variant="secondary" className="gap-1.5 py-1">
+    <div className="h-full w-full relative flex flex-col items-start gap-5 overflow-hidden">
+      <Badge variant="secondary" className="gap-1.5 py-1 ">
         <Award className="h-4 w-4" />
         Experience
       </Badge>
-      <Heading>Professional Experience & Achievements</Heading>
-      <FramerWrapper y={0} x={200}>
-        <p className="font-poppins text-lg w-full text-primary max-sm:text-base">
-          My professional journey encompasses diverse experiences in accounting, research, and community service. 
-          Here you&apos;ll find my certifications, research projects, work experience, and volunteer contributions.
-        </p>
-      </FramerWrapper>
+      <div className="flex flex-col gap-3">
+        <Heading>Professional Experience & Achievements</Heading>
+        <FramerWrapper y={0} x={200}>
+          <p className="font-poppins text-lg w-full text-primary max-sm:text-base">
+            My professional journey encompasses diverse experiences in accounting, research, and community service. 
+            Here you&apos;ll find my certifications, research projects, work experience, and volunteer contributions.
+          </p>
+        </FramerWrapper>
+      </div>
 
-      {/* Certifications */}
+      {/* Certifications Section */}
       <FramerWrapper y={100} delay={0.2} className="w-full gap-4 flex flex-col">
         <div className="flex items-center gap-2 pb-3 border-b border-border">
           <Award className="w-5 h-5 text-amber-600" />
           <h2 className="text-2xl font-bold text-primary font-poppins">Courses, Licenses & Certifications</h2>
         </div>
-        <div className="space-y-3 w-full">
+        <div className="space-y-3">
           {portfolioConfig.certifications.map((cert, idx) => (
             <FramerWrapper key={idx} y={50} delay={0.25 + idx * 0.05} className="w-full">
               <div className="border-l-4 border-l-amber-500 pl-4 py-2 rounded-r-lg bg-secondary/30">
@@ -40,13 +40,13 @@ export default function ExperienceSection() {
         </div>
       </FramerWrapper>
 
-      {/* Research Projects */}
+      {/* Research Projects Section */}
       <FramerWrapper y={100} delay={0.3} className="w-full gap-4 flex flex-col">
         <div className="flex items-center gap-2 pb-3 border-b border-border">
           <BookOpen className="w-5 h-5 text-blue-600" />
           <h2 className="text-2xl font-bold text-primary font-poppins">Research Projects</h2>
         </div>
-        <div className="space-y-3 w-full">
+        <div className="space-y-3">
           {portfolioConfig.researchProjects.map((project, idx) => (
             <FramerWrapper key={idx} y={50} delay={0.35 + idx * 0.05} className="w-full">
               <div className="border-l-4 border-l-blue-500 pl-4 py-3 rounded-r-lg bg-secondary/30">
@@ -65,13 +65,13 @@ export default function ExperienceSection() {
         </div>
       </FramerWrapper>
 
-      {/* Work Experience */}
+      {/* Work Experience Section */}
       <FramerWrapper y={100} delay={0.4} className="w-full gap-4 flex flex-col">
         <div className="flex items-center gap-2 pb-3 border-b border-border">
           <Briefcase className="w-5 h-5 text-green-600" />
           <h2 className="text-2xl font-bold text-primary font-poppins">Work Experience</h2>
         </div>
-        <div className="space-y-4 w-full">
+        <div className="space-y-4">
           {portfolioConfig.workExperience.map((job, idx) => (
             <FramerWrapper key={idx} y={50} delay={0.45 + idx * 0.05} className="w-full">
               <div className="border-l-4 border-l-green-500 pl-4 py-3 rounded-r-lg bg-secondary/30">
@@ -93,13 +93,13 @@ export default function ExperienceSection() {
         </div>
       </FramerWrapper>
 
-      {/* Volunteer Experience */}
+      {/* Volunteer Experience Section */}
       <FramerWrapper y={100} delay={0.5} className="w-full gap-4 flex flex-col">
         <div className="flex items-center gap-2 pb-3 border-b border-border">
           <Heart className="w-5 h-5 text-rose-600" />
           <h2 className="text-2xl font-bold text-primary font-poppins">Volunteer Experience</h2>
         </div>
-        <div className="space-y-4 w-full">
+        <div className="space-y-4">
           {portfolioConfig.volunteerExperience.map((volunteer, idx) => (
             <FramerWrapper key={idx} y={50} delay={0.55 + idx * 0.05} className="w-full">
               <div className="border-l-4 border-l-rose-500 pl-4 py-3 rounded-r-lg bg-secondary/30">
@@ -153,6 +153,8 @@ export default function ExperienceSection() {
           ))}
         </div>
       </FramerWrapper>
-    </section>
+    </div>
   );
-}
+};
+
+export default projectsPage;

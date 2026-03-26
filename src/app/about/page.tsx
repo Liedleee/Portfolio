@@ -4,6 +4,7 @@ import Heading from "@/components/Heading";
 import { Badge } from "@/components/ui/badge";
 import { Heart, User2, MapPin, Sparkles } from "lucide-react";
 import { portfolioConfig } from "@/config/portfolio.config";
+import Aboutfooter from "@/components/Aboutfooter";
 
 // Hobby icon mapping — sesuaikan dengan hobi yang ada di config
 const hobbyIcons: Record<string, string> = {
