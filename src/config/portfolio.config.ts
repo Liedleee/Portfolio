@@ -69,7 +69,7 @@ export const portfolioConfig = {
       "Creating Cool Projects",
     ],
     personalInfo: {
-      language: "•Bahasa Indonesia-Native or bilingual proficiency\n  •English-Limited working proficiency",
+      language: "Bahasa Indonesia-Native or bilingual proficiency\n  English-Limited working proficiency",
       nationality: "Malang",
       gender: "Male",
     },
