@@ -2,6 +2,7 @@
 
 import Heading from "@/components/Heading";
 import FramerWrapper from "@/components/animation/FramerWrapper";
+import ScrollWrapper from "@/components/animation/ScrollWrapper";
 import { Badge } from "@/components/ui/badge";
 import { LightbulbIcon, Users, Wrench, Heart, FileText, BarChart3, Palette, Zap } from "lucide-react";
 
@@ -49,11 +50,11 @@ export default function SkillsSection() {
       <div className="flex flex-col gap-6 w-full">
         <Heading>My Skills and Interests.</Heading>
 
-        <FramerWrapper y={0} x={200}>
+        <ScrollWrapper direction="right" delay={0.2}>
           <p className="font-poppins text-base w-full text-primary max-sm:text-sm leading-relaxed">
             As an accountant, I possess a blend of social and technical skills that enable me to excel in financial analysis, auditing, and sustainable accounting practices.
           </p>
-        </FramerWrapper>
+        </ScrollWrapper>
 
         {/* Social Skills */}
         <FramerWrapper y={100} delay={0.3} className="w-full">

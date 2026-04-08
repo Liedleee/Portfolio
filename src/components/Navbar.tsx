@@ -53,17 +53,10 @@ const Navbar = () => {
     },
   ];
 
-  const [scrolling, setScrolling] = useState(false);
   const [activeSection, setActiveSection] = useState('home');
   
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > 0) {
-        setScrolling(true);
-      } else {
-        setScrolling(false);
-      }
-
       // Determine active section based on scroll position
       const sections = ['home', 'about', 'skills', 'education', 'projects'];
       for (const section of sections) {
@@ -92,7 +85,7 @@ const Navbar = () => {
   };
 
   return (
-    <div className={`fixed top-5 right-0 left-0 px-0 sm:px-5 m-auto w-full sm:w-fit bg-transparent z-[+9999999] ${scrolling ? "hidden":"block"}`}>
+    <div className="fixed top-5 right-0 left-0 px-0 sm:px-5 m-auto w-full sm:w-fit bg-transparent z-[9999999]">
       <Dock className='items-end pb-3 rounded-full'>
         {data.map((item, idx) => (
           <button

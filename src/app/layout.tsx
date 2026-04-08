@@ -61,8 +61,7 @@ export default function RootLayout({
         <Navbar />
         <main
           className={cn(
-            "flex relative break-words min-h-screen bg-transparent bg-[radial-gradient(#2f7df4_1px,transparent_1px)] [background-size:16px_16px]",
-            { "bg-white": "#E6E7EB" }
+            "flex relative break-words min-h-screen bg-transparent bg-[radial-gradient(#2f7df4_1px,transparent_1px)] [background-size:16px_16px]"
           )}
         >
           {children}

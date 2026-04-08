@@ -62,14 +62,16 @@ export const portfolioConfig = {
   about: {
     bio: "I have completed my Bachelor’s Degree in Accounting at Universitas Muhammadiyah Malang with a strong interest in sustainability accounting, CSR, ESG, audit, and financial data analysis. During my academic journey, I also completed the Center of Excellence – Sustainability Accounting Class (COE SSAC) program from the Accounting Department, which strengthened my understanding of sustainability accounting and responsible business practices.",
     hobbies: [
-      "Coding",
-      "Playing Games",
-      "Watching Anime",
-      "Tech Blog Writing",
-      "Creating Cool Projects",
+      "Analyzing Financial Reports",
+      "Spreadsheet Modelling",
+      "Business Reading",
+      "Audit Case Study",
+      "Learning Tax & Regulations",
+      "Personal Budgeting",
+      "Solving Logic Puzzles",
     ],
     personalInfo: {
-      language: "Bahasa Indonesia-Native or bilingual proficiency\n  English-Limited working proficiency",
+      language: "Bahasa Indonesia-Native or bilingual proficiency & English-Limited working proficiency",
       nationality: "Malang",
       gender: "Male",
     },

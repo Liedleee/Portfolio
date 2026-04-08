@@ -3,6 +3,7 @@
 import Aboutfooter from "@/components/Aboutfooter";
 import Heading from "@/components/Heading";
 import FramerWrapper from "@/components/animation/FramerWrapper";
+import ScrollWrapper from "@/components/animation/ScrollWrapper";
 import { Badge } from "@/components/ui/badge";
 import { portfolioConfig } from "@/config/portfolio.config";
 import { Heart, User2, MapPin, Sparkles } from "lucide-react";
@@ -51,25 +52,25 @@ export default function AboutSection() {
           </span>
         </Heading>
 
-        <FramerWrapper y={0} x={100}>
+        <ScrollWrapper direction="right" delay={0.2}>
           <div className="relative pl-4 border-l-2 border-primary/20">
             <span className="absolute -left-2 -top-4 text-5xl text-primary/10 font-serif select-none leading-none">&quot;</span>
             <p className="font-poppins text-base text-primary/80 leading-relaxed max-sm:text-sm">
               {portfolioConfig.about.bio}
             </p>
           </div>
-        </FramerWrapper>
+        </ScrollWrapper>
       </div>
 
       {/* Personal Info Card */}
-      <FramerWrapper className="w-full" y={100} delay={0.3}>
+      <ScrollWrapper direction="up" delay={0.3}>
         <div className="w-full rounded-2xl border border-border bg-secondary/30 backdrop-blur-sm p-5">
           <Aboutfooter />
         </div>
-      </FramerWrapper>
+      </ScrollWrapper>
 
       {/* Hobbies */}
-      <FramerWrapper className="w-full" y={100} delay={0.31}>
+      <ScrollWrapper direction="up" delay={0.4}>
         <div className="flex items-center gap-2 mb-4">
           <div className="p-1.5 rounded-lg bg-rose-100 dark:bg-rose-900/30">
             <Heart className="h-4 w-4 text-rose-500" />
@@ -82,8 +83,10 @@ export default function AboutSection() {
 
         <div className="grid grid-cols-4 gap-3 max-lg:grid-cols-3 max-sm:grid-cols-2">
           {hobbies.map((hobby, i) => (
-            <div
+            <ScrollWrapper
               key={i}
+              direction="up"
+              delay={0.5 + i * 0.1}
               className="flex items-center gap-2.5 p-3 rounded-xl border border-border bg-secondary/20 hover:bg-secondary/50 hover:border-primary/30 hover:shadow-sm transition-all group cursor-default"
             >
               <span className="text-xl group-hover:scale-110 transition-transform duration-200">
@@ -92,10 +95,10 @@ export default function AboutSection() {
               <span className="font-poppins text-sm text-primary font-medium truncate">
                 {hobby}
               </span>
-            </div>
+            </ScrollWrapper>
           ))}
         </div>
-      </FramerWrapper>
+      </ScrollWrapper>
     </section>
   );
 }
