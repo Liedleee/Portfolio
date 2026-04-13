@@ -60,7 +60,8 @@ export const portfolioConfig = {
 
   // About Information
   about: {
-    bio: "I have completed my Bachelor’s Degree in Accounting at Universitas Muhammadiyah Malang with a strong interest in sustainability accounting, CSR, ESG, audit, and financial data analysis. During my academic journey, I also completed the Center of Excellence – Sustainability Accounting Class (COE SSAC) program from the Accounting Department, which strengthened my understanding of sustainability accounting and responsible business practices.",
+    image: "/rahmad nonformal.jpeg", // Add your photo URL here
+    bio: "I have completed my Bachelor's Degree in Accounting at Universitas Muhammadiyah Malang with a strong interest in sustainability accounting, CSR, ESG, audit, and financial data analysis. During my academic journey, I also completed the Center of Excellence – Sustainability Accounting Class (COE SSAC) program from the Accounting Department, which strengthened my understanding of sustainability accounting and responsible business practices.",
     hobbies: [
       "Analyzing Financial Reports",
       "Spreadsheet Modelling",
@@ -82,7 +83,7 @@ export const portfolioConfig = {
     roles: [
       "Auditor",
       "Student",
-      "Contributer",
+      "Researcher",
     ],
     // Technical Skills
     programmingLanguages: [

@@ -41,25 +41,48 @@ export default function AboutSection() {
         About me
       </Badge>
 
-      {/* Heading + Bio */}
-      <div className="flex flex-col gap-5 w-full max-w-3xl">
-        <Heading>
-          {portfolioConfig.title},{" "}
-          <span className="inline-flex items-center gap-1">
-            Based In
-            <MapPin className="h-5 w-5 text-rose-500 mx-1 inline" />
-            {portfolioConfig.about.personalInfo.nationality}.
-          </span>
-        </Heading>
+      {/* Heading + Bio + Image */}
+      <div className="flex flex-col lg:flex-row gap-12 w-full items-center lg:items-start">
+        <div className="flex flex-col gap-5 w-full lg:flex-1">
+          <Heading>
+            {portfolioConfig.title},{" "}
+            <span className="inline-flex items-center gap-1">
+              Based In
+              <MapPin className="h-5 w-5 text-rose-500 mx-1 inline" />
+              {portfolioConfig.about.personalInfo.nationality}.
+            </span>
+          </Heading>
 
-        <ScrollWrapper direction="right" delay={0.2}>
-          <div className="relative pl-4 border-l-2 border-primary/20">
-            <span className="absolute -left-2 -top-4 text-5xl text-primary/10 font-serif select-none leading-none">&quot;</span>
-            <p className="font-poppins text-base text-primary/80 leading-relaxed max-sm:text-sm">
-              {portfolioConfig.about.bio}
-            </p>
-          </div>
-        </ScrollWrapper>
+          <ScrollWrapper direction="right" delay={0.2}>
+            <div className="relative pl-4 border-l-2 border-primary/20">
+              <span className="absolute -left-2 -top-4 text-5xl text-primary/10 font-serif select-none leading-none">&quot;</span>
+              <p className="font-poppins text-base text-primary/80 leading-relaxed max-sm:text-sm">
+                {portfolioConfig.about.bio}
+              </p>
+            </div>
+          </ScrollWrapper>
+        </div>
+
+        {portfolioConfig.about.image && (
+          <ScrollWrapper direction="right" delay={0.3}>
+            <div className="relative w-72 h-72 max-lg:w-64 max-lg:h-64 max-md:w-56 max-md:h-56 flex-shrink-0">
+              {/* Gradient border glow effect */}
+              <div className="absolute inset-0 bg-gradient-to-br from-violet-500/20 via-transparent to-blue-500/20 rounded-3xl blur-xl" />
+              
+              {/* Main image container */}
+              <div className="relative w-full h-full overflow-hidden rounded-3xl border-2 border-primary/20 shadow-lg hover:shadow-2xl transition-all duration-300 hover:border-primary/40 group">
+                {/* Inner subtle border */}
+                <div className="absolute inset-0 rounded-3xl border border-primary/10 pointer-events-none" />
+                
+                <img
+                  src={portfolioConfig.about.image}
+                  alt={portfolioConfig.name}
+                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                />
+              </div>
+            </div>
+          </ScrollWrapper>
+        )}
       </div>
 
       {/* Personal Info Card */}
